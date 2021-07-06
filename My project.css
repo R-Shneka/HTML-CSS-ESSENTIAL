@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://q-xx.bstatic.com/xdata/images/hotel/840x460/205345652.jpg?k=92a8900edf743f0446c4b85cee9155aa581227b99fa0c992cca5fa325f1ca091&o" );
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    margin: 0px;
+    padding: 15 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(241, 179, 63, 0.616);
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px;
+
+}
+.navbar ul li {
+    list-style: none;
+     display: inline-block;
+     margin: o 20px;
+     position: relative;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    color: beige;
+    text-decoration: none;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) ;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.925);
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 60px;
+}
+
+
+
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: rgb(72, 9, 122);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: cadetblue;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
